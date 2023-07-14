@@ -25,7 +25,7 @@ BANNER_YYAX = r"""
               ░░░░░░                         
 """
          
-crrtk = ['`thwRl_%%0.[[y,hjlzz=m|ss^^^HHH___kL]', 'V&d_b0.%%{}p~3&y_', '`z_003.%3&31']
+
 
 def options():
    print('   [01] Ymap')
@@ -145,12 +145,6 @@ elif choose in ['01', '1']:
     print("file avaliable")
     input("write RD and press Enter to redirect  ")
     clear_screen()
-    YmapKey = input(colored("\n\nYour key to Ymap here (if u haven't one, press Enter): \n\n", 'red', 'on_grey', ['bold']))
-    
-if YmapKey in crrtk :
-    time.sleep(2)
-    print(colored('\nAcess granted', 'green', 'on_blue', ['bold']))
-    time.sleep(1)
     os.system('clear && cd misc && python Ymap.py --help')
 
 
