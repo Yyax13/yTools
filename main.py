@@ -25,7 +25,7 @@ BANNER_YYAX = r"""
               ░░░░░░                         
 """
          
-crrtk = '`thwRl_%%0.[[y,hjlzz=m|ss```HHH___kL]'
+crrtk = ['`thwRl_%%0.[[y,hjlzz=m|ss```HHH___kL]', ' V&d_b0.%%{}p~3&y_', '`z_003.%3&31']
 
 def options():
    print('   [01] Ymap')
@@ -54,7 +54,9 @@ clear_screen()
 banner()
 options()
 
+
 choose = input(colored('\nchoose an option:  ', 'green'))
+
 
 
 if choose in ['02', '2']:
@@ -138,23 +140,20 @@ elif choose in ['DD', 'dd', 'd', 'D']:
     os.system('python /all/destruct.py')
 elif choose in ['00', '0']:
     input(colored('write Q and press Enter to continue...  ', 'blue', 'on_grey', ['blink']))
-    
-if choose in ['01', '1']:
+elif choose in ['01', '1']:
     print("OK, Redirecting...")
     print("file avaliable")
     input("write RD and press Enter to redirect  ")
     clear_screen()
-    YmapKey = input(colored("This tool is private, pls insert ur acess key here: \n\n", 'red', 'on_grey', ['bold']))
+    YmapKey = input(colored("\n\nYour key to Ymap here (if u haven't one, press Enter): \n\n", 'red', 'on_grey', ['bold']))
     
-if YmapKey ==  crrtk:
+if YmapKey in crrtk :
     time.sleep(2)
     print(colored('\nAcess granted', 'green', 'on_blue', ['bold']))
     time.sleep(1)
     os.system('clear && cd misc && python Ymap.py --help')
-else:
-   print(colored('INCORRECT', 'red'))
-   time.sleep(3)
-   clear.screen()
+
+
 
 input(colored('\npress Enter to continue...  ', 'red', 'on_grey', ['blink']))
 clear_screen()
