@@ -25,7 +25,7 @@ BANNER_YYAX = r"""
               ░░░░░░                         
 """
          
-crrtk = ['`thwRl_%%0.[[y,hjlzz=m|ss```HHH___kL]', ' V&d_b0.%%{}p~3&y_', '`z_003.%3&31']
+crrtk = ['`thwRl_%%0.[[y,hjlzz=m|ss```HHH___kL]', 'V&d_b0.%%{}p~3&y_', '`z_003.%3&31']
 
 def options():
    print('   [01] Ymap')
