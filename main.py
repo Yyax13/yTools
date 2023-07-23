@@ -1,15 +1,6 @@
 import os
 from termcolor import colored
 import time
-
-BANNER = r"""
-███╗   ███╗ █████╗ ██╗███╗   ██╗
-████╗ ████║██╔══██╗██║████╗  ██║
-██╔████╔██║███████║██║██╔██╗ ██║
-██║╚██╔╝██║██╔══██║██║██║╚██╗██║
-██║ ╚═╝ ██║██║  ██║██║██║ ╚████║
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝                                                                           
-"""
          
 BANNER_YYAX = r"""
  █████ █████                                 
@@ -28,25 +19,51 @@ BANNER_YYAX = r"""
 
 
 def options():
-   print('   [01] Ymap')
+   time.sleep(0.6)
+   print('\n\n   [01] Ymap')
+   time.sleep(0.6)
    print('   [02] CheckStatus')
+   time.sleep(0.6)
    print('   [03] Crypter')
+   time.sleep(0.6)
    print('   [04] Decrypter')
+   time.sleep(0.6)
    print('   [05] Fake SmS')
+   time.sleep(0.6)
    print('   [06] Ip Info')
+   time.sleep(0.6)
    print('   [07] Reader')
+   time.sleep(0.6)
    print('   [08] Tools')
+   time.sleep(0.6)
    print('   [09] Adress')
+   time.sleep(0.6)
+   print('   [10] ASCII')
+   time.sleep(0.6)
    print('   [XX] Yyax: the dev')
+   time.sleep(0.6)
    print('   [YY] Presets')
+   time.sleep(0.6)
    print('   [00] Quit')
+   time.sleep(0.6)
 
 
 def clear_screen():
    os.system('cls' if os.name == 'nt' else 'clear')
 
 def banner():
-   print(colored("\033[1;34m" + BANNER + "\033[0m", 'red', 'on_grey', ['blink']))
+   time.sleep(1.6)
+   print(colored('███╗   ███╗ █████╗ ██╗███╗   ██╗', 'blue', '', ['bold']))
+   time.sleep(0.6)
+   print(colored('████╗ ████║██╔══██╗██║████╗  ██║', 'blue', '', ['bold']))
+   time.sleep(0.6)
+   print(colored('██╔████╔██║███████║██║██╔██╗ ██║', 'blue', '', ['bold']))
+   time.sleep(0.6)
+   print(colored('██║╚██╔╝██║██╔══██║██║██║╚██╗██║', 'blue', '', ['bold']))
+   time.sleep(0.6)
+   print(colored('██║ ╚═╝ ██║██║  ██║██║██║ ╚████║', 'blue', '', ['bold']))
+   time.sleep(0.6)
+   print(colored('╚═╝     ╚═╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝', 'blue', '', ['bold']))
    
 
    
@@ -55,7 +72,7 @@ banner()
 options()
 
 
-choose = input(colored('\nchoose an option:  ', 'green'))
+choose = input(colored('\nchoose an option:  ', 'green', '', ['bold', 'blink']))
 
 
 
@@ -107,9 +124,15 @@ elif choose in ['09', '9']:
     input("write RD and press Enter to redirect  ")
     clear_screen()
     os.system('python all/adress-coords.py')
+elif choose in ['10', '100']:
+    print("OK, Redirecting...")
+    print("file avaliable")
+    input("write RD and press Enter to redirect  ")
+    clear_screen()
+    os.system('python all/ascii.py')
 elif choose in ['X', 'XX', 'x', 'xx']:
     clear_screen()
-    print(colored(BANNER_YYAX, 'green', 'on_grey', ['bold']))
+    print(colored(BANNER_YYAX, 'green', '', ['bold']))
     print(colored("""
                            
     Yyax:                  
@@ -146,9 +169,8 @@ elif choose in ['01', '1']:
     input("write RD and press Enter to redirect  ")
     clear_screen()
     os.system('clear && cd misc && python Ymap.py --help')
-
-
-
+    
+    
 input(colored('\npress Enter to continue...  ', 'red', 'on_grey', ['blink']))
 clear_screen()
 print(colored('Thanks for use Rvng-tools', 'green', 'on_grey', ['blink']))
