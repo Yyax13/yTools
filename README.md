@@ -1,8 +1,8 @@
-BRANDING NEW VERSION 1.0.2
+BRANDING NEW VERSION 1.0.3
 
 UPDATES:
 ``all banners now haven't the grey box``
-``new ASCII generator code``
+``ASCII tool removed by copy``
 ``a new main code``
 ``delay line for line in main``
 
