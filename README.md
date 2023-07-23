@@ -1,3 +1,12 @@
+BRANDING NEW VERSION 1.0.2
+
+UPDATES:
+``all banners now haven't the grey box``
+``new ASCII generator code``
+``a new main code``
+``delay line for line in main``
+
+
 Install:
 
 in kali:
@@ -37,4 +46,25 @@ $ python3 main.py
 in 'Presets' paste, you can finder some presets (html, etc)
 
 obs:
-the output archives will be saved in 'all' paste
+to use this tool without errors, in the termcolor archive (a python lib)
+add ``''`` to the HIGHLIGHTS var, don't forget to change the number 48 in ``list(range(40, 48))`` to 49
+
+the HIGHLIGHTS final code is:
+
+```
+HIGHLIGHTS = dict(
+        list(zip([
+            'on_grey',
+            'on_red',
+            'on_green',
+            'on_yellow',
+            'on_blue',
+            'on_magenta',
+            'on_cyan',
+            'on_white',
+            ''
+            ],
+            list(range(40, 49))
+            ))
+        )
+```
