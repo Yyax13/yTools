@@ -38,8 +38,6 @@ def options():
    time.sleep(0.6)
    print('   [09] Adress')
    time.sleep(0.6)
-   print('   [10] ASCII')
-   time.sleep(0.6)
    print('   [XX] Yyax: the dev')
    time.sleep(0.6)
    print('   [YY] Presets')
@@ -124,12 +122,6 @@ elif choose in ['09', '9']:
     input("write RD and press Enter to redirect  ")
     clear_screen()
     os.system('python all/adress-coords.py')
-elif choose in ['10', '100']:
-    print("OK, Redirecting...")
-    print("file avaliable")
-    input("write RD and press Enter to redirect  ")
-    clear_screen()
-    os.system('python all/ascii.py')
 elif choose in ['X', 'XX', 'x', 'xx']:
     clear_screen()
     print(colored(BANNER_YYAX, 'green', '', ['bold']))
